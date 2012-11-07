@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Setting up a Computer Opponent</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Setting up a Computer Opponent">
+</OBJECT>
+
+<H1><A NAME="e2_ffm"></A>Setting up a Computer Opponent</H1>
+
+<P>Starcraft has several types of Artificial Intelligence (AI) that can be assigned to computer controlled players. If a map is intended to be played using the “Use Map Settings” game type, it is important that you run <A HREF="star8ezo.htm">AI scripts</A> for any computer opponents in the map. In this game type, if an AI Script has not been specified, the computer-controlled players with do <U>nothing</U>.  In all other game types, computer controlled players will automatically use the Custom Level AI scripts.  For more information on game types, see the <A HREF="star5hbg.htm">Game Types</A> section.</P>
+
+<P>Several elements must be coordinated to run an AI script for a computer player: player settings, locations and triggers.</P>
+
+<H4>Player Settings</H4>
+
+<P>The first step is to make sure that there are computer players on the map.  In the <B>Player</B> menu, select <B>Settings</B> to open the <A HREF="star2d6g.htm">Player Settings</A> dialog.  Use the <B>Control</B> pull-down to set one of the players to <B>Computer</B> control.  </P>
+
+<P><B>Note:</B> Human and computer players cannot exist on the same force. In the <B>Scenario</B> menu, select <B>Forces</B>. Drag the computer players out of any force containing human players. For more information, see <A HREF="star552n.htm">Forces</A>.</P>
+
+<H4>Locations</H4>
+
+<P>The next step is to mark the computer base with a location.  In the <B>Layer</B> menu, select <B>Location</B>.  Create a Location called “Computer Player” somewhere in the middle of the computer’s starting town.  It is important that the Location be within a screen of a source of minerals and a source of Vespene gas.  For information on locations, see the <A HREF="star0d4p.htm">Creating Locations</A> section.</P>
+
+<H4>Triggers</H4>
+
+<P>The final step is to run an AI script for the computer player. In the <B>Scenario</B> menu, select <B>Triggers</B> to open the Triggers dialog. Create a new Trigger with owner set to the computer player, with the condition “Always” and the action “Run AI Script at Location”.  Click on the “script” field and select an appropriate AI script from the <A HREF="star8ezo.htm">List of AI Scripts</A>. Click on the “location” field and select the location called “Computer Player”.  The computer player will build up and attack according to the script you have selected.  (For a more detailed discussion of Triggers, see the <A HREF="star5fu7.htm">Trigger Overview</A>.)</P>
+
+</BODY>
+</HTML>

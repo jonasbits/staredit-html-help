@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Triggers: Condition Details</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Triggers, Condition Details">
+</OBJECT>
+
+<H1><A NAME="l7lt7m"></A>Triggers: Condition Details</H1>
+
+<P>The following section details each available condition.</P>
+
+<P><A NAME="9opvn_"></A><B>ACCUMULATE</B></P>
+
+<P>Accumulate requires that the player gather enough of a specific resource.</P>
+
+<P><A NAME="4prq9f"></A><B>ALWAYS</B></P>
+
+<P>This Condition is always considered true. Keep in mind that all of a trigger’s conditions must be met for it to activate; so adding Always to a trigger with other conditions has no effect.</P>
+
+<P>Use the Always condition for actions you want to take place at the beginning of the game, for instance, setting starting resources, initializing scores, or transmitting instructions. If the Preserve Trigger action is used, the trigger will activate once every two seconds. If not, the trigger will execute only once per game.</P>
+
+<P><A NAME="1pgtbv5"></A><B>BRING</B></P>
+
+<P>This states that a player is required to bring ‘X’ number of units to a specific location. The units can be any player-controlled unit available in the game.</P>
+
+<P><A NAME="1b0pyp"></A><B>COMMAND</B></P>
+
+<P>The selected player must control a certain number of the specified units. This includes rescued units but not hallucinations.</P>
+
+<P><A NAME="pck99j"></A><B>COMMAND THE LEAST</B></P>
+
+<P>Command the Least allows you to define an action based on the player that commands the least units. You might use this to give advantages to slower players or to single out weakened players. Note that this condition checks <I>all</I> players, including neutral, computer controlled, and rescuable players.</P>
+
+<P><A NAME="2zfazh"></A><B>COMMAND THE LEAST AT</B></P>
+
+<P>Command the Least At is similar to ‘Command the Least’, however, but only compares units at a particular location. The location can be restricted to certain elevations.  For more information, see <A HREF="star0d4p.htm">Creating Locations</A>.</P>
+
+<P><A NAME="4sqghe"></A><B>COMMAND THE MOST</B></P>
+
+<P>Command the Most requires that you command the most of the defined units. These units can be any player-controlled unit available in the game. This condition compares all players in the game, including neutral and rescuable units.</P>
+
+<P><A NAME="19xro7o"></A><B>COMMAND THE MOST AT</B></P>
+
+<P>Similar to the Command the Most, this condition compares the number of units at a specific location. The location can be restricted to certain elevations.  For more information, see <A HREF="star0d4p.htm">Creating Locations</A>.</P>
+
+<P><A NAME="1.9m23y"></A><B>COUNTDOWN TIMER</B></P>
+
+<P>This condition checks the time remaining on the countdown timer.  Note:  Unless a trigger has set the countdown timer, it equals zero seconds.</P>
+
+<P><A NAME="7i_8sf"></A><B>DEATHS</B></P>
+
+<P>Gives you the ability to create actions that are launched when a player has suffered a specific number of deaths of any of the units in the game.</P>
+
+<P><A NAME=".ifm_9"></A><B>ELAPSED TIME</B></P>
+
+<P>This condition allows you to create triggers that occur after a specified number of <A HREF="star9nse.htm">game seconds</A> have passed since the start of the scenario.</P>
+
+<P><A NAME="2mmqtw1"></A><B>HIGHEST SCORE</B></P>
+
+<P>This condition is considered true if the trigger’s owner has the highest <A HREF="star8zsq.htm">Score</A>. Note that if this is used as the only condition in a trigger, it will activate immediately at the start of the scenario, since all players will be tied for the highest score.</P>
+
+<P><A NAME="dqrc92"></A><B>KILL</B></P>
+
+<P>This condition tracks total kills by unit type.  Thus, the condition “Player 1 kills 1 or more any units” is true for the rest of the game once Player 1 kills a unit.</P>
+
+<P><A NAME="0iyrx9"></A><B>LEAST KILLS</B></P>
+
+<P>This condition is considered true if the trigger’s owner has the least kills of the specified <A HREF="star9vj3.htm">Unit</A>.</P>
+
+<P><A NAME="l4.bx7"></A><B>LEAST RESOURCES</B></P>
+
+<P>Similar to Least Kills, this condition is considered true if the trigger’s owner has the least of the specified <A HREF="star72id.htm">resource</A>. Note that Least Resources checks <I>all</I> players, including neutral, computer controlled and rescuable players.</P>
+
+<P><A NAME="2tqy_6n"></A><B>LOWEST SCORE</B></P>
+
+<P>This condition evaluates the current <A HREF="star8zsq.htm">Score</A> and is considered true if the current player has the lowest or is tied for the lowest score. Lowest Score checks all players, including neutral and rescuable players.</P>
+
+<P><A NAME="kbkui9"></A><B>MOST KILLS</B></P>
+
+<P>This condition is considered true if the trigger’s owner has the most kills of the specified <A HREF="star9vj3.htm">Unit</A>.</P>
+
+<P><A NAME="2bis_ik"></A><B>MOST RESOURCES</B></P>
+
+<P>Similar to Most Kills, this condition is considered true if the trigger’s owner has the most of the specified <A HREF="star72id.htm">resource</A>.</P>
+
+<P><A NAME="2c1so9p"></A><B>NEVER</B></P>
+
+<P>The Never condition can be used to temporarily disable actions for testing. A trigger with the Never condition will not activate at any point.</P>
+
+<P><A NAME="1jm1__n"></A><B>OPPONENTS</B></P>
+
+<P>This condition evaluates how many of the players are opponents of the trigger owner.  By default, all of the other players are considered opponents.  A player does not count as an opponent if either of the following conditions are met:</P>
+
+<P>·The player has been defeated.  This condition only counts players that are still in the game.</P>
+
+<P>·The player is set for allied victory with the trigger owner, AND the player is set for allied victory with all other players set for allied victory with the trigger owner.  (The enemy of an ally is still an enemy.)</P>
+
+<P>As a result, if opponents equals zero, all of remaining players are set for allied victory with each other. Use this condition with the <A HREF="star988i.htm#80_iow">Victory</A> action to create a scenario that allows for allied victory.</P>
+
+<P><A NAME="13o9ibn"></A><B>SCORE</B></P>
+
+<P>This condition allows you to analyze a player’s current <A HREF="star8zsq.htm">Score</A> and perform actions based on the value. You can reference any of the individual scoring types from score.</P>
+
+<P><A NAME="199q80k"></A><B>SWITCH</B></P>
+
+<P>This allows you to test against a switch value. Switches are on/off values that can be set with an action. Switches can be used to keep track of which triggers have been activated, to disable or enable certain triggers or to link multiple triggers together.  You may also rename switches from this dialog box.</P>
+
+</BODY>
+</HTML>
