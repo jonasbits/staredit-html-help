@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Creating a Mission Briefing</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Creating a Mission Briefing">
+</OBJECT>
+
+<H1><A NAME="1159f2j"></A>Creating a Mission Briefing</H1>
+
+<P>A Mission Briefing is shown before any game played with the “Use Map Settings” game type. The briefing is an opportunity to explain any special rules that will be in effect during the game and to establish the tone and story for the game. If the map is a multiplayer map, each player or group of players can have a different mission.  </P>
+
+<P>The interface for creating a Mission Briefing is based on the interface for defining Triggers.  For a more detailed discussion of this interface, see the <A HREF="jhdtvo.htm">Trigger Overview</A> section.</P>
+
+<P>In the <B>Scenario</B> menu, select <B>Mission Briefings</B> to open the Mission Briefings dialog.  Click the <B>New</B> button.  The Mission Briefing wizard will appear.</P>
+
+<P>The first dialog in the Mission Briefing wizard allows you to select which players will receive the briefing.  Select the players or force you want to receive the briefing and click the <B>Next</B> button. </P>
+
+<P>The next dialog allows you to define the Mission Briefing Actions.  To add an Action, click the <B>New</B> button. The following Actions are available in Mission Briefings:</P>
+
+<P><B>MISSION OBJECTIVES</B> – This action allows you to enter text explaining the mission objectives.  This text is displayed in the OBJECTIVES pane in the lower left of the briefing room.  It also appears in the game if the player selects <B>Mission Objectives</B> from the game menu.  This is, of course, just text.  It is up to you to make sure that the Triggers in the game are consistent with this text.</P>
+
+<P><B>TEXT MESSAGE </B>– This action allows you to display text in the center pane in the briefing room. Text messages too long to fit in the pane will automatically scroll.  Be sure to specify a long enough duration.  If you want to have one text message display after another, use a WAIT command between them.  Otherwise, the second text message will immediately replace the first.</P>
+
+<P><B>PLAY WAV</B> – This action allows you to play a pre-recorded sound file.  Use this action to incorporate speech, music, and sound effects into your briefings. For information on managing sound files in a map, see the <A HREF="50fl_wk.htm">Adding Sound Effects</A> section.</P>
+
+<P><B>SHOW PORTRAIT</B> – There are four slots for portraits in the briefing room.  You can use this action to display any portrait from the game in any of the four slots.  You should SHOW PORTRAIT in a slot before using the DISPLAY SPEAKING PORTRAIT action.</P>
+
+<P><B>DISPLAY SPEAKING PORTRAIT</B> – Use this action to highlight one of the slots and make the portrait in it use its talk animation. You can use this action with PLAY WAV to make characters in the briefing appear to talk. Remember to SHOW PORTRAIT in a slot before using the DISPLAY SPEAKING PORTRAIT action.</P>
+
+<P><B>HIDE PORTRAIT</B> – Use this action to clear a portrait slot.</P>
+
+<P><B>TRANSMISSION</B> –  This action combines the functionality of PLAY WAV, TEXT MESSAGE, DISPLAY SPEAKING PORTRAIT and WAIT.  In most cases, using the TRANSMISSION action is preferable to using the actions separately.</P>
+
+<P><B>WAIT</B> – This action causes a delay before other actions can take place. It is usually a good idea to have a WAIT after a TEXT MESSAGE command.  The WAIT command can also be used to put dramatic pauses between lines of dialogue.</P>
+
+<P><B>Note:</B> Place a WAIT Action at the end of any multiplayer mission briefing.  The WAIT will compensate for speed variances in processors and ensure that all players can see the mission briefing. </P>
+
+<P>Actions execute in order from top to bottom.  You can use the <B>Move Up</B> and <B>Move Down</B> buttons to re-order the Actions as necessary.</P>
+
+</BODY>
+</HTML>

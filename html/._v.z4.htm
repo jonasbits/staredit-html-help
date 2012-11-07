@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Triggers: Guidelines</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Triggers, Guidelines">
+</OBJECT>
+
+<H1><A NAME="._v.z4"></A>Triggers: Guidelines</H1>
+
+<P>Some general rules and guidelines for setting up Triggers are:</P>
+
+<P>·Triggers will only be used in a scenario if the game creator chooses “Use Map Settings” as the Game Type. Playing a Melee or other game type on a scenario map disables any map-specific Triggers and enables triggers and victory conditions based on the game type. For more information, see the <A HREF="106gefl.htm">Game Types</A> section.</P>
+
+<P>·All Triggers must have at least one Player, one Condition and one Action. The Trigger wizard will not allow you to create an incomplete Trigger.</P>
+
+<P>·All Conditions of a Trigger must be met before the Actions are carried out. If you want to have more than one way to activate an event, you must set up multiple Triggers.</P>
+
+<P>·Normally, a Trigger can only activate once per game for each owner. Once a Trigger’s Actions have been completed, the Trigger is disabled unless one of the Actions was <A HREF="_3ib32.htm#tb.0.d">Preserve Trigger</A>. If you want a Trigger to remain in effect throughout the scenario, include <A HREF="_3ib32.htm#tb.0.d">Preserve Trigger</A> in its Action list.</P>
+
+<P>·Each player has a separate Trigger list. If a Trigger is applied to more than one player, each player checks its Conditions and executes its Actions independently. Because of this, a Trigger that is owned by “All Players” will carry out its Actions multiple times if its Conditions are true for multiple players.</P>
+
+<P>·If a Trigger’s owner is defeated or leaves the game, the Trigger is disabled.</P>
+
+<P>·The final player in a scenario must explicitly receive a <A HREF="_3ib32.htm#80_iow">Victory</A> Action before the scenario will end.  If one player executes the Victory Action, all the other players will defeat, but if other players have executed the <A HREF="_3ib32.htm#c5dzc">Defeat</A> Action, the remaining player will not automatically win.</P>
+
+<P>·All <A HREF="_3ib32.htm#1.ug91g">Text messages</A>, <A HREF="r2e3sp.htm#e1yeh7">WAV files</A> and <A HREF="_3ib32.htm#.u6o.z">Transmissions</A> are <B>only</B> sent to the Trigger’s owners. Text messages will only appear if the owner has <B>Subtitles</B> turned on in the Starcraft Sound Options Menu or if the <B>Always Display</B> option is checked for the Action.</P>
+
+<P>·Conditions that are turned off by removing the checkmark next to them are ignored and considered “true.” Use the <A HREF="l7lt7m.htm#2c1so9p">Never</A> Condition or disable all of its actions if you want to completely disable a Trigger.</P>
+
+<P>Certain Actions are marked as “Blocking” Actions. No other Actions can take place until a Blocking Action is finished. The Blocking Actions are:</P>
+
+<P>· <A HREF="_3ib32.htm#3yzf87">WAIT</A></P>
+
+<P>· <A HREF="_3ib32.htm#.u6o.z">TRANSMISSION</A></P>
+
+<P>· <A HREF="_3ib32.htm#1_dyge9">CENTER VIEW</A></P>
+
+<P>Certain Actions cannot be used while the game is in a Paused state. These Actions are:</P>
+
+<P>· <A HREF="_3ib32.htm#1_dyge9">CENTER VIEW</A></P>
+
+<P>· <A HREF="_3ib32.htm#38h1tce">CREATE UNIT</A></P>
+
+<P>· <A HREF="_3ib32.htm#4x0a_5y">KILL UNIT</A></P>
+
+<P>· <A HREF="_3ib32.htm#32cvis2">KILL UNIT AT LOCATION</A></P>
+
+<P>· <A HREF="_3ib32.htm#4xkdxd5">REMOVE UNIT</A></P>
+
+<P>· <A HREF="_3ib32.htm#352s0zs">REMOVE UNIT AT LOCATION</A></P>
+
+<P>Certain Actions will <B>not</B> function while in a multiplayer game. These Actions are:</P>
+
+<P>· <A HREF="_3ib32.htm#y3xcs6">PAUSE</A></P>
+
+<P>· <A HREF="_3ib32.htm#11j.sa7">UNPAUSE</A></P>
+
+<P>· <A HREF="_3ib32.htm#13i_o5y">SET NEXT SCENARIO</A></P>
+
+</BODY>
+</HTML>

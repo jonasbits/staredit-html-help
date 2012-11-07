@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Triggers: User Values</TITLE>
+<OBJECT id=POPUPS  type="application/x-oleobject" 
+classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" > 
+</OBJECT>
+<script 
+type="text/javascript" language=javascript src="popups.js"> 
+</script>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Triggers, User Values">
+</OBJECT>
+
+<H1><A NAME="r2e3sp"></A>Triggers: User Values</H1>
+
+<P>The following is a complete list of the user definable values that can be used with the <A HREF="8by06z.htm">Actions</A> and <A HREF="k8nfxu.htm">Conditions</A> in the scenario editor. </P>
+
+<P><A NAME="11suleb"></A><B>ALLY STATUS</B></P>
+
+<P>This option box allows you to change a value from Enemy, Ally and Allied Victory.  A description of each of these values can be found in the game’s documentation.</P>
+
+<P><A NAME="18_e3wm"></A><B>COMMENT</B></P>
+
+<P>This is a text field that allows you to describe your trigger.</P>
+
+<P><A NAME="1n9tjji"></A><B>DESTINATION</B></P>
+
+<P>Destination is the same as <A HREF="#f0ukg3">Location</A>.</P>
+
+<P><A NAME="4jr5.x0"></A><B>DURATION</B></P>
+
+<P>Duration may be a <A HREF="#pi_z4r">qualified number</A> or <A HREF="#3eej9x">number</A> value, measured in milliseconds. 1,000 ms equals 1 second.</P>
+
+<P><A NAME="3b4kk4"></A><B>LABEL</B></P>
+
+<P>Label allows you to define a name for the leader board, which will be displayed next to the top player’s score when the leader board is displayed.</P>
+
+<P><A NAME="f0ukg3"></A><B>LOCATION</B></P>
+
+<P>Locations are areas that have been defined in the <A HREF="uiomo9.htm">Location Layer</A> of the map. The “Anywhere” Location covers the entire map. If you create a unit at “Anywhere,” it will appear in the center of the map. All locations except “Anywhere” can be restricted to certain elevations.  For more information, see <A HREF="uiomo9.htm">Creating Locations</A>.</P>
+
+<P><A NAME="3eej9x"></A><B>NUMBER</B></P>
+
+<P>This value can range from 1-9,999,999.</P>
+
+<P><A NAME="p7lg8"></A><B>NUMBER OF UNITS</B></P>
+
+<P>This value can range from 1-255.  Choosing the option box for “All Units” will disable the ability to enter a number, and the trigger will affect all units.</P>
+
+<P><A NAME="3eemk0"></A><B>ORDER</B></P>
+
+<P>Order specifies whether the affected unit(s) will Move, Patrol or Attack.  The difference between these commands is listed in your game documentation.</P>
+
+<P><A NAME="12_y.ij"></A><B>PERCENT</B></P>
+
+<P>This value can range from 1-100.  The value that is chosen dictates what percentage the trigger will affect.  For example, choosing 10 for this value will specify 10 percent out of the total.  If the total were 250, 10 percent would represent 25.</P>
+
+<P><A NAME="5.069x"></A><B>PLAYER</B></P>
+
+<P>Player is used to specify which player or players are subject to the action or condition. Valid player values are <A HREF="Javascript:POPUPS.TextPopup(definition_playerx,popfont,9,9,-1,-1)">Player 1-8</A>, <A HREF="Javascript:POPUPS.TextPopup(1l9w5lx,popfont,9,9,-1,-1)">Current Player</A>, <A HREF="Javascript:POPUPS.TextPopup(1l9w5lx,popfont,9,9,-1,-1)">Foes</A>, <A HREF="Javascript:POPUPS.TextPopup(11bkybb,popfont,9,9,-1,-1)">Allies</A>, <A HREF="Javascript:POPUPS.TextPopup(27yjrcd,popfont,9,9,-1,-1)">Neutral Players</A>, <A HREF="Javascript:POPUPS.TextPopup(definition_allplayers,popfont,9,9,-1,-1)">All Players</A>, <A HREF="Javascript:POPUPS.TextPopup(definition_forcex,popfont,9,9,-1,-1)">Force 1-4</A>, and <A HREF="Javascript:POPUPS.TextPopup(k48sex,popfont,9,9,-1,-1)">Non Allied Victory Players</A>.</P>
+
+<P><A NAME="1dqyuln"></A><B>POINTS</B></P>
+
+<P>Points can be used to track combat kills, construction or a custom score set with triggers. This is normally used with the leader board action to display a constant score for each player.</P>
+
+<P><B>‘Total’</B> points are the combined total of units, buildings, kills and razings. </P>
+
+<P><B>‘Units’</B> points are calculated based on the number of units that were built in the scenario multiplied by the number of points associated with a unit.</P>
+
+<P><B>‘Buildings’</B> points are calculated based on the number of buildings that were built in the scenario multiplied by the number of points associated with a unit.</P>
+
+<P><B>‘Units and Buildings’</B> points are the combined totals from units and buildings.</P>
+
+<P><B>‘Kills’</B> points calculate the number of unit kills and factor them into a score.</P>
+
+<P><B>‘Razings’ </B>points calculate the number of buildings that were destroyed and factor them into a score.</P>
+
+<P><B>‘Kills and Razings’ </B>points are the combined totals from kills and razings.</P>
+
+<P><B>‘Custom’</B> points are values that are user defined. Custom points can only be modified using Trigger Actions.</P>
+
+<P><A NAME="9.mmjo"></A><B>PROPERTIES</B></P>
+
+<P>This will bring up the <A HREF="39en90.htm">Unit Properties</A> dialog box.</P>
+
+<P><A NAME="pi_z4r"></A><B>QUALIFIED NUMBER</B></P>
+
+<P>This combines a <A HREF="#3eej9x">number</A> with the ‘Or More’, ‘Or Fewer’, and ‘Exactly’ qualifiers. </P>
+
+<P><A NAME="2n342kf"></A><B>QUANTITY</B></P>
+
+<P>Quantity might be a <A HREF="#pi_z4r">qualified number</A>, <A HREF="#3eej9x">number</A>, or <A HREF="#p7lg8">number of units</A> value.  To determine which is applicable, check the title of the dialog box that appears when you click on Quantity.</P>
+
+<P><A NAME="3ssd3j"></A><B>RESOURCES</B></P>
+
+<P>The resources value allows you to choose Minerals, Gas, or Minerals and Gas.</P>
+
+<P><A NAME="3fn2_hc"></A><B>SCENARIO</B></P>
+
+<P>This selection brings up the standard ‘File Open’ dialog box. Choose the map that you wish to be loaded when a player finishes this scenario. Using the <A HREF="_3ib32.htm#13i_o5y">Set Next Scenario</A> trigger allows you to create a fully featured campaign similar to the single player levels that are included with Starcraft or even a branching campaign composed of multiple scenarios.</P>
+
+<P><A NAME="1c9hc8m"></A><B>SCORE TYPE</B></P>
+
+<P>This value represents the scoring method that you wish to use in your condition or action. You can set the scoring values from the <A HREF="#1dqyuln">points</A> user value.</P>
+
+<P></P>
+
+<P><A NAME="83jqdz"></A><B>SCRIPT</B></P>
+
+<P>This value is the computer AI script that you wish to use. The pull-down list specifies the available AI scripts. By changing the computer AI behavior, you can, for example, instruct computer-controlled units to attack certain players.</P>
+
+<P><A NAME="22mpr0d"></A><B>SET</B></P>
+
+<P>Set allows you to modify or set the value of another variable, such as a player’s score or available resources. Set can also be used to enable, disable or toggle switches and certain doodads.</P>
+
+<P><A NAME="8gb17n"></A><B>SWITCH</B></P>
+
+<P>A switch is a simple on/off variable. Using switches allows you keep track of which triggers have been used or to keep a trigger from activating several times simultaneously if multiple players meet the conditions at the same time.</P>
+
+<P><A NAME="3e0lkh"></A><B>SWITCH IS SET</B></P>
+
+<P>This allows you to test whether a specific switch is in the ‘Set’ state or the ‘Cleared’ state.</P>
+
+<P><A NAME="wfp35p"></A><B>TEXT or TEXT MESSAGE</B></P>
+
+<P>Similar to the <A HREF="#e1yeh7">WAV File</A> option, this allows the computer to notify you when the associated condition is achieved. Note that text messages will only appear if the affected player has <B>Subtitles</B> turned on in the Starcraft Sound Options Menu or if the <B>Always Display</B> option is checked for the action.</P>
+
+<P><A NAME="3j.vk0"></A><B>TIMER </B></P>
+
+<P>Timer allows you to select a number (in seconds) for the timer to be initialized at. Once the timer has been initialized, it will count down from its position in seconds and stop when it reaches zero.</P>
+
+<P><A NAME="11wus4t"></A><B>UNIT or UNITS</B></P>
+
+<P>This value sets which unit(s) will be affected by the triggers. The different unit types are:</P>
+
+<P><B>Any Unit </B>– This includes all types of units including buildings, resources, power-ups, etc.</P>
+
+<P><B>Men </B>– In general, any non-building unit that can be created over the course of the game. This also includes critters and heroes.</P>
+
+<P><B>Building </B>– Any structure.  This includes unique structures such as the Zerg Overmind.</P>
+
+<P><B>Factory </B>– Any structure that can produce units.</P>
+
+<P><B>Specific Unit </B>– Gives you the ability to specify a single unit type.</P>
+
+<P>If you want to affect more than one specific unit type, such as both Zerg Queens and Protoss Arbiters, you will need a condition or action for each unit type.</P>
+
+<P><A NAME="e1yeh7"></A><B>WAV FILE</B></P>
+
+<P>This value is the name of the file that will be played by this action. For more information on importing .WAV files, see the <A HREF="50fl_wk.htm">Adding Sound Effects</A> section.</P>
+
+</BODY>
+</HTML>
