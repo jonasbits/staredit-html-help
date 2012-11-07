@@ -1,6 +1,12 @@
 [OPTIONS]
+Compatibility=1.1 or later
+Compiled file=STAREDIT.chm
 Contents file=staredit.hhc
+Default topic=html\star5xps.htm
+Display compile progress=No
 Index file=STAREDIT.hhk
+Language=0x41d Svenska (Sverige)
+
 
 [FILES]
 html\star5xps.htm
@@ -131,3 +137,6 @@ html\star344w.htm
 html\star344x.htm
 html\star344y.htm
 html\star344z.htm
+
+[INFOTYPES]
+
