@@ -8,5 +8,23 @@
 	<param name="ImageType" value="Folder">
 </OBJECT>
 <UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="test">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Placing Units">
+			<param name="Local" value="html\11dm0f_.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="test2">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Adding sound effects">
+				<param name="Local" value="html\50fl_wk.htm">
+				</OBJECT>
+		</UL>
+	</UL>
 </UL>
 </BODY></HTML>

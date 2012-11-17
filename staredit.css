@@ -1,1 +1,3 @@
-a[href^="Javascript"] { color: green; }
+	a[href*="TextPopup"]{
+	color: green; text-decoration: none; 
+	}
